@@ -1,0 +1,339 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Poppins:wght@400;500&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* commone style */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E6E6E6;
+
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+
+}
+
+.container {
+    width: 1120px;
+    margin-bottom: 80px;
+
+
+}
+
+/* slidder style */
+
+
+.slider-content {
+    background-color: #c0392b;
+    border-radius: 20px;
+    display: flex;
+
+}
+
+.slider-detils {
+    color: #fff;
+    margin: 40px 0px 45px 100px;
+    width: 525px;
+}
+
+.slider-heading {
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 0px;
+}
+
+.slider-detils p {
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.slider-detils a {
+    background-color: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: inset 0 0 0 0 #f9e506;
+}
+
+.slider-detils a:hover {
+    box-shadow: inset 300px 0 0 0 #f9e506;
+    color: #000;
+}
+
+
+.slider-image {
+
+    width: 500px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.slider-image img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Blogs style */
+.blogs-aside {
+    display: flex;
+}
+
+.aside {
+    width: 200px;
+    background-color: #161616;
+    height: 215px;
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-bottom: 50px;
+
+}
+
+.aside a {
+    background-color: #FFFFFF;
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 8px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    border: 1px solid rgb(211, 207, 207);
+
+}
+
+.aside .active {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+}
+
+.blog {
+    width: 292px;
+}
+
+.blog-image {
+    margin-bottom: 10px;
+
+}
+
+.blog-image img {
+    width: 100%;
+}
+
+.blog-detils {
+
+
+    padding-left: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgb(231, 229, 229);
+    border-left: 1px solid rgb(231, 229, 229);
+    border-right: 1px solid rgb(231, 229, 229);
+    border-radius: 0px 0px 10px 10px;
+
+
+}
+
+
+
+.blog-detils .blog-button {
+    border: 1px solid;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0px 10px;
+    color: #161616;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 14px;
+
+
+}
+
+.blog-detils .blog-title {
+    font-weight: bold;
+    width: 230px;
+}
+
+
+
+.blog-detils .time {
+    color: #999;
+
+}
+
+.blog-detils .margin {
+    margin-right: 50px;
+    padding-bottom: 20px;
+
+}
+
+.view-tamlet {
+    margin: auto;
+    display: none;
+
+}
+
+.view-tamlet-btn {
+
+    background-color: #d43030;
+
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    width: 150px;
+}
+
+/* footer style */
+footer {
+    background-color: #c0392b;
+}
+
+
+
+
+.terget h1 {
+    text-align: center;
+    padding: 90px 0px 30px 0px;
+    color: #fff;
+}
+
+.terget hr {
+    border: 0.5px solid rgb(112, 109, 109);
+}
+
+.nav ul {
+    text-align: center;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #999;
+    padding: 30px;
+    display: block;
+}
+
+
+.scocial {
+    text-align: center;
+
+
+
+}
+
+.icons {
+    background-color: #999;
+    width: 200px;
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.icons a {
+    color: #2980b9;
+    margin: 20px;
+}
+
+/* Midea Queries */
+
+/* Mobile Display */
+
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+
+    }
+
+
+
+    .slider-detils,
+    .slider-image {
+        width: 100%;
+        align-items: center;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .blogs-aside,
+    .slider-content {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aside {
+        background-color: #FFFFFF;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nav ul li {
+        display: block;
+
+    }
+
+    footer {
+        align-items: center;
+    }
+}
+
+
+
+/* Tremlet Devices */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+
+    }
+
+
+    .slider-image img {
+        width: 100%;
+    }
+
+    .blogs-aside {
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .aside {
+        background-color: #FFFFFF;
+    }
+
+
+
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .view-tamlet {
+        display: block;
+    }
+}
